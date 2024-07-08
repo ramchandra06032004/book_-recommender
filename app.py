@@ -54,6 +54,24 @@ if st.button("Recommend"):
                 st.write(f"Year: {year}")
                 st.write(f"Publisher: {publisher}")
 
-    
 
+# At the end of your Streamlit app code (app.py), add the following:
 
+footer="""<style>
+.a {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#0e1117;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+</style>
+<div class="a">
+  
+  <p>&copy; 2024 Ramchandra All rights reserved.</p>
+</div>
+"""
+st.markdown(footer,unsafe_allow_html=True)
